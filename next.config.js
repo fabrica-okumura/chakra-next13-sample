@@ -6,7 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.renault.jp',
+        hostname: 'as1.ftcdn.net',
       },
     ],
   },
