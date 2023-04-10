@@ -1,13 +1,25 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Box } from "@chakra-ui/react"
+import NextDocument, { Html, Head, Main, NextScript } from "next/document"
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+
+
+type Props = {}
+
+class Document extends NextDocument<Props> {
+  render() {
+    return (
+      <Html lang="ja" prefix="og: https://ogp.me/ns#">
+        <Head>
+        </Head>
+        <body className="mr0">
+          <Box overflowX="hidden">
+            <Main />
+            <NextScript />
+          </Box>
+        </body>
+      </Html>
+    )
+  }
 }
+
+export default Document
