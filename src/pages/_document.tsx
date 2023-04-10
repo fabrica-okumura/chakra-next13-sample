@@ -11,7 +11,7 @@ class Document extends NextDocument<Props> {
       <Html lang="ja" prefix="og: https://ogp.me/ns#">
         <Head>
         </Head>
-        <body className="mr0">
+        <body className="mr0" id="top">
           <Box overflowX="hidden">
             <Main />
             <NextScript />

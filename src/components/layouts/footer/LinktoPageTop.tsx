@@ -1,5 +1,5 @@
 import { Box, Image } from "@chakra-ui/react"
-// import { Link as Scroll } from "react-scroll"
+import { Link as Scroll } from "react-scroll"
 import { useEffect, useState } from "react"
 
 const LinktoPageTop = () => {
@@ -13,7 +13,7 @@ const LinktoPageTop = () => {
   }, [])
 
   const scrollWindow = () => {
-    const top = 3000
+    const top = 2000
     let scroll = 0
     scroll = window.scrollY
     if (top <= scroll) {
@@ -40,15 +40,14 @@ const LinktoPageTop = () => {
       sx={{
         transition: "opacity .3s var(--chakra-easein)",
         _hover: {
-          opacity: {lg:".7"},
+          opacity: { lg: ".7" },
         },
         a: {
           display: "grid",
           placeContent: "center",
-          w: "64px",
-          h: "64px",
-          bg:"white",
-          border:"2px solid var(--chakra-color_primary)",
+          w: { base: "50px", lg: "64px" },
+          h: { base: "50px", lg: "64px" },
+          bg: "white",
           borderRadius: "50%",
           filter: "drop-shadow(0 3px 6px var(--chakra-shadow))",
           img: {
@@ -57,15 +56,15 @@ const LinktoPageTop = () => {
         },
       }}
     >
-      ページトップへ
-      {/* <Scroll to="top" href="#top" smooth={true} duration={400} style={style}>
+      {/* ページトップへ */}
+      <Scroll to="top" href="#top" smooth={true} duration={400} style={style}>
         <Image
-          width="16px"
-          height="28px"
+          width={{ base: "11px", lg: "16px" }}
+          height={{ base: "20px", lg: "28px" }}
           src="/images/common/icon_arrow_primary.svg"
           alt="ページトップへ"
         />
-      </Scroll> */}
+      </Scroll>
     </Box>
   )
 }

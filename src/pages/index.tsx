@@ -15,7 +15,9 @@ const Page = () => {
         }}
       />
       <Heading as="h1">トップページです</Heading>
+
       <Box className="cw">
+        <Text mb="10">React/Next.js/Chakra UIを使ったサンプルサイトです。</Text>
         <Box as="section" mb="20">
           <Heading>next/imageのサンプル</Heading>
           <Text>
