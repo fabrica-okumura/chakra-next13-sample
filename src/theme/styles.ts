@@ -29,6 +29,7 @@ const styles = {
       "--chakra-section_margin_pc_s": "6.5rem",
     },
     body: {
+      bg: "white",
       fontSize: "md",
       lineHeight: { base: "1.8", lg: "2" },
       color: "#333",
