@@ -2,7 +2,7 @@ import Layout from "@/components/Layout"
 import { NextSeo } from "next-seo"
 import { Box, Text } from "@chakra-ui/react"
 import PageTitle from "@/components/parts/PageTitle"
-import TextFontRaleway from "@/components/parts/textFontRaleway"
+import TextFontRaleway from "@/components/parts/TextFontRaleway"
 
 const Page = () => (
   <Layout>
