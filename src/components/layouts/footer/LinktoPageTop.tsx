@@ -56,7 +56,6 @@ const LinktoPageTop = () => {
         },
       }}
     >
-      {/* ページトップへ */}
       <Scroll to="top" href="#top" smooth={true} duration={400} style={style}>
         <Image
           width={{ base: "11px", lg: "16px" }}

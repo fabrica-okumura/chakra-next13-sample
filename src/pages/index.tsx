@@ -71,7 +71,7 @@ const Page = () => {
               sx={{
                 span: {
                   fontWeight: "bold",
-                  color: "red",
+                  color: "red.300",
                 },
               }}
             >

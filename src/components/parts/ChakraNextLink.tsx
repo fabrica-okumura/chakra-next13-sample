@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import { ReactNode } from "react"
 import NextLink from "next/link"
 import { Link, LinkProps as ChakraLinkProps } from "@chakra-ui/react"
 
