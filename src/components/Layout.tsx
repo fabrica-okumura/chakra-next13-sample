@@ -2,18 +2,36 @@ import { ReactNode } from "react"
 import Header from "@/components/layouts/header/Header"
 import Footer from "@/components/layouts/footer/Footer"
 import { Box } from "@chakra-ui/react"
+import Breadcrumbs, { BreadcrumbItem } from "@/components/templates/Breadcrumbs"
 
-type Props = {
+export type { BreadcrumbItem }
+
+interface LayoutProps {
+  breadcrumbItems?: BreadcrumbItem[]
+  currentPageLabel: string
   children: ReactNode
 }
 
-const Layout = ({ children }: Props) => {
+const Layout: React.FC<LayoutProps> = ({
+  children,
+  breadcrumbItems,
+  currentPageLabel,
+}) => {
   return (
     <>
       <Header />
-      <Box as="main">
-        {/* パンくずある場合ここに設定 */}
-        {children}
+      <Box display={{ base: "none", lg: "block" }} className="cw">
+        <Breadcrumbs
+          items={breadcrumbItems || []}
+          currentPageLabel={currentPageLabel}
+        />
+      </Box>
+      <Box as="main">{children}</Box>
+      <Box display={{ lg: "none" }}>
+        <Breadcrumbs
+          items={breadcrumbItems || []}
+          currentPageLabel={currentPageLabel}
+        />
       </Box>
       <Footer />
     </>

@@ -12,7 +12,6 @@ const Layout = ({ children }: Props) => {
     <>
       <HeaderTopPage />
       <Box as="main">
-        {/* パンくずある場合ここに設定 */}
         {children}
       </Box>
       <Footer />

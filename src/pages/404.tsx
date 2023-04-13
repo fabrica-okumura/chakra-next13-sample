@@ -1,12 +1,21 @@
-import Layout from "@/components/Layout"
+import Layout, { BreadcrumbItem } from "@/components/Layout"
 import { NextSeo } from "next-seo"
 import { Box, Text } from "@chakra-ui/react"
 import PageTitle from "@/components/parts/PageTitle"
 
+const pageTitle = "ページが見つかりません"
+
+const breadcrumbItems: BreadcrumbItem[] = [
+  // Add other breadcrumb items if necessary
+]
+
 const Page = () => (
-  <Layout>
-    <NextSeo title="ページが見つかりません" description="" />
-    <PageTitle>ページが見つかりません</PageTitle>
+  <Layout
+    breadcrumbItems={breadcrumbItems}
+    currentPageLabel={pageTitle}
+  >
+    <NextSeo title={pageTitle} description="" />
+    <PageTitle>{pageTitle}</PageTitle>
     <Box className="cw">
       <Text textAlign="center">
         申し訳ございません。

@@ -60,6 +60,11 @@ const Page = () => {
               linkの両方の機能を合わせ持つリンクコンポーネントを作成しています。
             </Link>
           </Text>
+          <Text mb="10">
+            <Link href="/about/#section1" bg="purple.300" display="block" color="white">
+            /about/#section1へ
+            </Link>
+          </Text>
           <Text>
             <Link
               href="https://dubdesign.net/web/marketing/rel-effect/"
@@ -78,6 +83,7 @@ const Page = () => {
               target属性やrel属性も設定<span>できます</span>。
             </Link>
           </Text>
+
         </Box>
 
         <Box as="section" mb="20">

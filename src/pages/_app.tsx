@@ -11,7 +11,6 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
 
   // gtmIdを設定する。
   useEffect(() => {
-    // TagManager.initialize({ gtmId: "GTM-5RKPNTQ" })
     TagManager.initialize({ gtmId: "GTM-*******" })
   }, [])
 
@@ -30,7 +29,7 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
           type: "article",
           title: titletext,
           site_name: titletext,
-          url: "https://recruit.fabrica-com.co.jp/",
+          url: "https://***サイトトップのURLをフルパスで記入",
           images: [
             {
               url: "/images/ogp.jpg",
@@ -40,8 +39,8 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
           ],
         }}
         twitter={{
-          handle: "@fabrica_recruit",
-          site: "@fabrica_recruit",
+          handle: "@***アカウントを記入",
+          site: "@***アカウントを記入",
           cardType: "summary",
         }}
       />
